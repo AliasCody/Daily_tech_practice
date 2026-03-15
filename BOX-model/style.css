@@ -1,0 +1,43 @@
+body{
+    background-color: grey;
+    border: 5px solid black;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.box{
+    padding:5px;
+    width: 500px;
+    margin:0 auto;
+}
+
+.left_up{
+    margin: 100 auto;
+    width:300px;
+    height: 150px;
+    border: blue 5px solid;
+}
+.left_down{
+    margin: 100 auto;
+    width:300px;
+    height: 150px;
+    border: red 5px solid;
+}
+.right_UP{
+    margin: 100 auto;
+    width:300px;
+    height: 150px;
+    border: green 5px solid;
+}
+.right_DOWN{
+    margin: 100 auto;
+    width:300px;
+    height: 150px;
+    border: purple 5px solid;
+}
+
+
+.row_container{
+    display:flex;
+}
