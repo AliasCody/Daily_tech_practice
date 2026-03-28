@@ -22,12 +22,15 @@
     - `space-between`
     - `space-around`
 
+
 - <code style='color:yellow'>align-items</code> align items **vertically** and has the following value:
     - `flex-start`
     - `flex-end`
     - `center`
     - `baseline`
     - `stretch`: items are stretched to fit the container.
+
+- <code style="color:lime;font-size:24px">align-self</code> give the child component can decide how to be placed at **cross** direction(perpendicular to the father).
 
 - <code style='color:yellow'>flex-direction</code> defines how items being placed.
     - tips: direction is you list row by row,or col by col
@@ -37,6 +40,8 @@
     - `column-reverse`
 
 - `order:1` all flex items have an attribute `order` and being `0` as default.The one who's order is smaller will be put left. 
+
+
 
 - `flex-direction` decide the direction of how your componets line up(from left to right or from top to bottom).
     - if components are filled out of a row so every components have been squeezed,you can use `flex-wrap` to control the behavior (you wanna them being squeezed or 
