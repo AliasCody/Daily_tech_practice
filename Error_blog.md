@@ -42,7 +42,9 @@
 - `order:1` all flex items have an attribute `order` and being `0` as default.The one who's order is smaller will be put left. 
 
 
+- <code style="color:yellow;">flex-wrap</code> if things are limited at a row,than can use this property to change the way they line up.
+    - `nowrap`
+    - `wrap` its a little bit different from i thought,because here `wrap` means you pack the content up to another place.
+    - `wrap-reverse`
 
-- `flex-direction` decide the direction of how your componets line up(from left to right or from top to bottom).
-    - if components are filled out of a row so every components have been squeezed,you can use `flex-wrap` to control the behavior (you wanna them being squeezed or 
-    automatically move to anothor row)
+- <code style="color:yellow;font-size:20px;">flex-flow</code> is combination of <code style="color:yellow;">flex-wrap</code> and <code style='color:yellow'>flex-direction</code>, you can just add the attribute of these, ex. `flex-flow: row wrap;`
