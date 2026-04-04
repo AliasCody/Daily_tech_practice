@@ -11,6 +11,8 @@
 
 # Flex-box
 
+<p style="font-size: 30px;color:blue;">You need to fully understand what is <span style='color:white;background-color:red;'>Cross Axis</span> to have truly understand about the function meaning.</p>
+
 <p style="font-size: 30px;">All begin with <code>display:flex</code></p>
 
 
@@ -48,3 +50,18 @@
     - `wrap-reverse`
 
 - <code style="color:yellow;font-size:20px;">flex-flow</code> is combination of <code style="color:yellow;">flex-wrap</code> and <code style='color:yellow'>flex-direction</code>, you can just add the attribute of these, ex. `flex-flow: row wrap;`
+
+- <code style='color:yellow;'>align content</code> to set how multiple lines are spaced spread apart from each other.
+different from <code style='color:yellow;'>align-item</code> for dealing with **relationship between lines and containers**,not items and items(which can using <code style='color:yellow;'>align-items</code> to do).
+    - `flex-start`
+    - `flex-end`
+    - `center`
+    - `space-between`
+    - `space-around`
+    - `stretch`
+
+## Unit
+
+<code style="font-size:14px;color:orange;">height: 10 vh;</code> and <code style="font-size:14px;color:lime;">height: 10 %;</code> are using different reference target to modify,
+- <code style="font-size:14px;color:orange;">vh</code> using **parent component** as reference.
+- <code style="font-size:14px;color:lime;">%</code> using **window** as reference.

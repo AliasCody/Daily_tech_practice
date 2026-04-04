@@ -1,0 +1,85 @@
+/* =========================================
+   把畫面正中央當作起點
+   ========================================= */
+body {
+    margin: 0;
+    min-height: 100vh; /* 讓畫面高度至少有整個螢幕高 */
+    
+    /* 用Flexbox 技巧置中 */
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center;     /* 垂直置中 */
+    
+    background-image: url('image/back.jpg');
+    background-size: cover;
+    font-family: "Cascadia Mono", Arial, sans-serif; /* 讓字體好看點 */
+}
+
+/* =========================================
+   名片外框設定
+   ========================================= */
+.business-card {
+    background: linear-gradient(135deg, #bd8fe0 0%, #f3f4f3 100%);
+    width: 320px;
+    padding: 40px 30px;
+    border-radius: 20px; /* 圓角 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* 漂亮的陰影，讓名片浮起來 */
+    
+    /* Flexbox 神技 2: 讓卡片裡的內容由上排到下 */
+    display: flex;
+    flex-direction: column; /* 直向排列 */
+    align-items: center;    /* 讓裡面的元素水平置中 */
+}
+
+/* =========================================
+   大頭貼設定
+   ========================================= */
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* 變成完美的圓形 */
+    object-fit: cover;  /* 確保裁切漂亮，圖片不變形 */
+    border: 4px solid #c0cbe4; /* 給大頭貼一個外框 */
+    margin-bottom: 15px; /* 推開下方的文字 */
+}
+
+/* =========================================
+   文字設定
+   ========================================= */
+.name {
+    margin: 0; /* 消除預設邊距 */
+    font-size: 26px;
+    color: black;
+}
+
+.title {
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 1px; /* 字距拉開一點，增加質感 */
+}
+
+/* =========================================
+   聯絡資訊區塊
+   ========================================= */
+.contact-info {
+    width: 100%; /* 填滿名片的寬度 */
+    background-color: #3f3a3a; /* 稍微灰一點的底色 */
+    padding: 15px;
+    border-radius: 12px;
+    box-sizing: border-box; /* 確保 padding 不會讓寬度爆掉 */
+    
+    /* Flexbox 神技 3: 處理清單間隔 */
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* 元素之間的距離，這屬性超好用！ */
+}
+
+/* 單行聯絡資訊 (圖示 + 文字) */
+.contact-item {
+    display: flex;
+    align-items: center; /* 讓圖示跟文字垂直對齊 */
+    gap: 10px; /* 圖示跟文字的距離 */
+    font-size: 14px;
+    color: lime;
+}

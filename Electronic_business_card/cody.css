@@ -1,0 +1,64 @@
+body{
+    background-image: url('image/back.jpg');
+    background-size: cover;
+
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    width: 320px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /*box-shadow: h-offset v-offset blur spread color inset;*/
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.15);
+    /*linear-gradient(degree,color1 how_much,color2 how_much)*/
+    background: linear-gradient(135deg, #bd8fe0 0%, #f3f4f3 100%);
+
+    /* 圓角 border-radius */
+    border-radius: 40px;
+
+    /* 統一子元素間的距離 */
+    gap: 15px;
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    /* perfect circle */
+    border-radius: 50%;
+    border: solid 5px rgb(246, 160, 246);
+}
+
+
+.contact{
+    background-color: rgb(71, 82, 57);
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+
+.Name{
+    font-weight: bold;
+    margin: 0%;
+    color: black;
+    font-size: 28px;
+    font-family: Sans-Serif;
+}
+
+.contact_info{
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(2, 224, 2);
+}
