@@ -9,3 +9,13 @@
 
 The structure of DOM will be:
 ![tree_structure](tree_structure.png)
+
+
+# Navigation things
+
+
+## `id` property
+
+- `id` need to be unique,if there are more than one component have the same id,the behavior of `document.getElementById` will be unpredictable.
+
+## `querySelectorAll()` `querySelector()` `matches()`
